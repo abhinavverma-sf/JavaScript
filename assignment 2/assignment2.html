@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' media='screen'>
+    <link rel='stylesheet' type='text/css' media='screen' href="assignment2.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
-    
+
+
 </head>
 
 <body>
-    <button id="b1" onclick="loadData()"  class="btn btn-primary">Load Data</button>
-    <table class="table table-striped">
-        <thead>
-            <tr>
+    <button id="b1" onclick="loadData()" class="btn btn-primary">Load Data</button>
+    <div>
+        <table class="table table-striped">
+            <thead id="itshead">
+                <!-- <tr>
                 <th scope="col">#</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Middle Name</th>
@@ -30,13 +31,14 @@
                 <th scope="col">Role</th>
                 <th scope="col">Address</th>
                 <th scope="col">Actions</th>
-            </tr>
-        </thead>
-        <tbody id="data">
+            </tr> -->
+            </thead>
+            <tbody id="data">
 
-        </tbody>
-    </table>
-  <!--- <script>
+            </tbody>
+        </table>
+    </div>
+    <!--- <script>
 
         function loadData(){
       fetch("data.json").then(response=> response.json())

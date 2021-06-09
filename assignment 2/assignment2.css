@@ -1,0 +1,7 @@
+input{
+    width: 150px;
+}
+table{
+    max-width: 1000px;
+    overflow: hidden;
+}
