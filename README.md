@@ -9,3 +9,10 @@
 Download the zip file or clone it. To run the assignment2.html you need to create http server.
 I created with the help of python3 by command python3 -m http.server in terminal
 
+# Screenshots
+
+[!Load Data][assignment 2/screenshots/image1.png]
+[!Loading Data from Json][assignment 2/screenshots/image2.png]
+[!Functioning of Delete][assignment 2/screenshots/image3.png]
+[!Functioning of Save][assignment 2/screenshots/image4.png]
+
