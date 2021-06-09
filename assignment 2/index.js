@@ -75,9 +75,9 @@ function deleteRow(btn) {
     var row = btn.parentNode.parentNode;
     let rIndex = row.rowIndex;
     rIndex = rIndex - 1;
-    console.log('rindex', rIndex);
+    
     userData = [...userData.slice(0, rIndex), ...userData.slice(rIndex + 1)];
-    console.log(userData);
+    
     $("itshead").empty();
     $("#data").empty();
     showTable("middle");
@@ -105,7 +105,7 @@ function addColumn(btn) {
     let r = document.getElementsByTagName("tr")[rIndex].getElementsByTagName("input").length;
     let r2 = document.getElementsByTagName("tr")[rIndex].getElementsByTagName("input");
     let newlength = r - 2;
-    console.log('newlength', newlength);
+    
     for (let i = 0; i < newlength; i++) {
 
         document.getElementsByTagName("tr")[rIndex].getElementsByTagName("input")[i].readOnly = !(document.getElementsByTagName("tr")[rIndex].getElementsByTagName("input")[i].readOnly);
@@ -201,7 +201,7 @@ if (buttontext == "Refresh Data") {
     document.getElementById("b1").addEventListener("click", refreshData);
     function refreshData() {
         
-        console.log(userData);
+        
         $("#data").empty();
         showTable("start");
 
