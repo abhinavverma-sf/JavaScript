@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen'>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    
+</head>
+
+<body>
+    <button id="b1" onclick="loadData()"  class="btn btn-primary">Load Data</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Middle Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Role</th>
+                <th scope="col">Address</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+  <!--- <script>
+
+        function loadData(){
+      fetch("data.json").then(response=> response.json())
+      .then(data => {
+        var table = document.getElementById('data');
+            data.forEach(function(x) {
+                var tr = document.createElement('tr');
+                tr.innerHTML = '<td>' + x.id + '</td>' +
+                '<td>' + x.firstname + '</td>' +
+                '<td>' + x.middlename + '</td>' +
+                '<td>' + x.lastname + '</td>'+
+                '<td>' + x.email + '</td>' +
+                '<td>' + x.phone + '</td>' +
+                '<td>' + x.role + '</td>' +
+                '<td>' + x.address + '</td>';
+                table.appendChild(tr);
+            });
+      })
+    }
+    </script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
