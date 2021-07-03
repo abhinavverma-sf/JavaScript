@@ -1,4 +1,4 @@
 
 
-## Head over to master branch for all files
+## All assignments are uploaded here
 
