@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "firstname": "Mr.a",
+        "middlename": "ab",
+        "lastname": "z",
+        "email": "aabz@gmail.com",
+        "phone": "9898934",
+        "role": "0",
+        "address": "Noida"
+        
+    },
+    {
+        "id": 2,
+        "firstname": "Mr.b",
+        "middlename": "bc",
+        "lastname": "x",
+        "email": "bbcx@gmail.com",
+        "phone": "9898935",
+        "role": "1",
+        "address": "Noida"
+        
+    },
+    {
+        "id": 3,
+        "firstname": "Mr.c",
+        "middlename": "cd",
+        "lastname": "y",
+        "email": "ccdy@gmail.com",
+        "phone": "9898937",
+        "role": "2",
+        "address": "Mohali"
+        
+    }
+]
