@@ -20,7 +20,9 @@ Made more routes in src/routes.ts as this required join operation.
 Modified columns in all the table with the help of sql command.
 Used Trigger for Updated_Date field. It auto-updates any changes and displays in the table.
 
-### One major issue
+### How to run
 
-## Yet to solve this error
-Can't set headers after they are sent.
+For backend.. install the dependencies and do npm run dev it will start the server at PORT
+For frontend.. I used python server by command python3 -m http.server
+
+

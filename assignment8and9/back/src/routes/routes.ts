@@ -203,13 +203,7 @@ router.put(
         if (error) {
           throw error;
         }
-        if (results.rows.length == 0) {
-          res.status(400).json({
-            message: `No Member with Member ID ${given_id} Found`,
-          });
-        } else {
-          res.status(200).send(`User modified with ID: ${given_id}`);
-        }
+        
       }
     );
   }
