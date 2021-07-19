@@ -47,7 +47,7 @@ router.post("/addMember", (req: Request, res: Response) => {
     console.log(content);
     // reading JSON file
     var new_data = fs.readFileSync(
-      "/home/abhinav.verma/Documents/Javascript/assignment6/back/src/routes/data.json",
+      `${__dirname}/data.json`,
       { encoding: "utf8" }
     );
     var json = JSON.parse(new_data);
@@ -58,7 +58,7 @@ router.post("/addMember", (req: Request, res: Response) => {
     //writing on to JSON file
 
     fs.writeFile(
-      "/home/abhinav.verma/Documents/Javascript/assignment6/back/src/routes/data.json",
+      `${__dirname}/data.json`,
       JSON.stringify(json, null, 2),
       function (err) {
         if (err) {
@@ -103,8 +103,10 @@ router.put("/editMember/:id", (req: Request, res: Response) => {
       : data[index].address;
 
     let edited_data = data[index];
+    console.log(__dirname);
     var new_data = fs.readFileSync(
-      "/home/abhinav.verma/Documents/Javascript/assignment6/back/src/routes/data.json",
+      `${__dirname}/data.json`
+      ,
       { encoding: "utf8" }
     );
     var json = JSON.parse(new_data);
@@ -115,7 +117,7 @@ router.put("/editMember/:id", (req: Request, res: Response) => {
     //writing on to JSON file
 
     fs.writeFile(
-      "/home/abhinav.verma/Documents/Javascript/assignment6/back/src/routes/data.json",
+      `${__dirname}/data.json`,
       JSON.stringify(json, null, 2),
       function (err) {
         if (err) {
@@ -151,7 +153,7 @@ router.delete("/deleteMember/:id", (req: Request, res: Response) => {
   if (found_index == true) {
     data.splice(index, 1);
     var new_data = fs.readFileSync(
-      "/home/abhinav.verma/Documents/Javascript/assignment6/back/src/routes/data.json",
+      `${__dirname}/data.json`,
       { encoding: "utf8" }
     );
     var json = JSON.parse(new_data);
@@ -162,7 +164,7 @@ router.delete("/deleteMember/:id", (req: Request, res: Response) => {
     //writing on to JSON file
 
     fs.writeFile(
-      "/home/abhinav.verma/Documents/Javascript/assignment6/back/src/routes/data.json",
+      `${__dirname}/data.json`,
       JSON.stringify(json, null, 2),
       function (err) {
         if (err) {

@@ -28,15 +28,5 @@
     "phone": "9898937",
     "role": "2",
     "address": "Mohali"
-  },
-  {
-    "id": 4,
-    "firstname": "bi1lia",
-    "middlename": "tillia",
-    "lastname": "sinha",
-    "email": "ab@gmail.com",
-    "phone": "9898981898",
-    "role": "admin",
-    "address": "Lahorewale"
   }
 ]
